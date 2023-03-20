@@ -1,0 +1,21 @@
+package chapter03;
+
+	import java.util.Scanner;
+
+	public class test {
+	    public static void main(String[] args) {
+	    	
+	        Scanner scanner = new Scanner(System.in);
+	        String name = null; 
+	        
+	        try {
+	            name = scanner.nextLine(); 
+	            if (name.equals("Jihoon"))
+	                System.out.println("Hello, Jihoon!");
+	        } catch (Exception exception) {
+	        	exception.printStackTrace();
+	            System.out.println("Error: name is null.");
+	        }
+	  
+	    }
+	}

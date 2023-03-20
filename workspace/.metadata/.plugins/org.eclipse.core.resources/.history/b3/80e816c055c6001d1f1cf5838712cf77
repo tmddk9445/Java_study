@@ -1,0 +1,17 @@
+package chapter03;
+
+public class test {
+
+	  public static void main(String[] args) {
+		    
+		    try {
+		      Exception exception = new Exception("고의로 예외를 발생시킵니다.");
+		      throw exception;
+
+		    } catch (Exception exception) {
+		      System.out.println("에러메시지 : " + exception.getMessage());
+		      exception.printStackTrace();
+		    }
+		    System.out.println("프로그램이 정상 종료되었습니다.");
+	  }
+}

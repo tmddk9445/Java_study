@@ -1,0 +1,21 @@
+package chapter03;
+
+	public class test {
+	    public static void main(String[] args) {
+		    	
+	        String[] array = new String[5];
+	        
+	        try {
+	        	for (int index = 0; index < array.length; index += 2) {
+	        		array[index] = "hi";
+	        	}
+	        
+	        	for (int index = 0; index < array.length; index++) {
+	        		System.out.println(array[index].trim());
+	        	}
+        	
+	        } catch (Exception exception) {
+	        	exception.printStackTrace();
+	        }   
+	    }
+	}

@@ -1,0 +1,24 @@
+package chapter03;
+
+
+		public class test {
+		    public static void main(String[] args) {
+		    	
+		        String[] arr = new String[5];
+		        
+//		        try {
+		        	for (int index = 0; index < arr.length; index += 2) {
+						arr[index] = "hi";
+		        	}
+		        
+		        	for (int index = 0; index < arr.length; index++) {
+		        		System.out.println(arr[index]);
+		        	}
+		        	
+//		        } catch (Exception exception) {
+//		        	exception.printStackTrace();
+//		        }
+		        
+		    }
+	
+	}

@@ -1,0 +1,69 @@
+package chapter03.A_ClassObject;
+
+class SmartPhone {
+	// 기종
+	String modelName;
+	// 색상
+	String color;
+	// 메모리
+	int memory;
+	// 전화번호
+	String telNumber;
+	// 전원
+	boolean power;
+	
+	// 전화걸기
+	void call(String toTelNumber) {
+		System.out.println(toTelNumber + " 로 전화를 겁니다.");
+	}
+	
+	// 영상 시청
+	void showVidel() {
+		System.out.println("영상을 시청합니다.");
+	}
+	
+	// 메시지 보내기
+	void sendMessage(String message, String toTelNumber) {
+		System.out.println(toTelNumber + "로 " + message + "를 보냅니다.");
+	}
+	
+	// 전원키고 끄기
+	void setPower() {
+		power = !power;
+	}
+}
+
+public class ClassObject {
+	
+	public static void main(String[] args) {
+		
+		SmartPhone iPhone14;
+		
+		iPhone14 = new SmartPhone();
+		SmartPhone iPhone14Pro = new SmartPhone();
+		
+		System.out.println(iPhone14);
+		System.out.println(iPhone14Pro);
+		
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

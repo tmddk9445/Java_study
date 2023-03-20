@@ -1,0 +1,20 @@
+package chapter03;
+
+	import java.util.Scanner;
+
+	public class test {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in); // Scanner 객체를 생성합니다.
+	        String name = null; // null 값을 할당합니다.
+	        try {
+	            name = sc.next(); // 사용자로부터 이름을 입력받습니다.
+	            if (name.equals("John")) { // 입력받은 이름이 "John"인 경우
+	                System.out.println("Hello, John!"); // 인사말을 출력합니다.
+	            }
+	        } catch (NullPointerException e) { // NullPointerException 예외를 처리합니다.
+	        	e.printStackTrace();
+	            System.out.println("Error: name is null.");
+	        }
+	    }
+	  
+}
